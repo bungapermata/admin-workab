@@ -8,6 +8,8 @@
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="stylesheet" href="assets/css/dasboard.css">
     
+    <script src="assets/chart.js/dist/chart.js"></script>
+    
     
     <title>Dasboard</title>
 </head>
@@ -15,7 +17,7 @@
     
     <div class="sidebar">
         <div class="sidebar-brand">
-            <img src="assets/img/logo.png" width="70px" height="50px" alt="">
+            <img src="assets/img/logo.png" width="100px" height="95px" alt="">
         </div>
         
         <div class="sidebar-menu">
@@ -75,81 +77,63 @@
         </header>
         
         <main>
-            <div class="dasboard-cards">
-                <div class="row atas">
-                    <div class="col-6">
-                        <div class="card atas">
-                            <div class="card-header">
-                                Attendance
-                            </div>
-                            <div class="card-body">
-                                123
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-6">
-                        <div class="card atas">
-                            <div class="card-header">
-                                Visiting
-                            </div>
-                            <div class="card-body">
-                                0
-                            </div>
+            <div class="row">
+                <div class="col-md-3">
+                    <div class="item karyawan">
+                        <p>Total Karyawan</p>
+                        <div class="round">
+                            <span class="total">5000</span>
                         </div>
                     </div>
                 </div>
-                
-                <div class="row">
-                    <div class="col-4">
-                        <div class="card bawah">
-                            <div class="card-header">
-                                User
-                            </div>
-                            <div class="card-body">
-                                0
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-4">
-                        <div class="card bawah">
-                            <div class="card-header">
-                                Store
-                            </div>
-                            <div class="card-body">
-                                0
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-4">
-                        <div class="card bawah">
-                            <div class="card-header">
-                                Product
-                            </div>
-                            <div class="card-body">
-                                0
-                            </div>
+                <div class="col-md-3">
+                    <div class="item toko">
+                        <p>Total Toko</p>
+                        <div class="round">
+                            <span class="total">1200</span>
                         </div>
                     </div>
                 </div>
-                
+                <div class="col-md-3">
+                    <div class="item attendance">
+                        <p>Total Attendance</p>
+                        <div class="round">
+                            <span class="total">12000</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="item visiting">
+                        <p>Total Visiting</p>
+                        <div class="round">
+                            <span class="total">111500</span>
+                        </div>
+                    </div>
+                </div>
                 
             </div>
             
+            <canvas id="myChart" width="280px" height="150px"></canvas>
             
         </main>
         
         
-        <footer>
-            <span class="footer">Copyright 2021 WORKAB</span>
-        </footer>
     </div>
     
+    <footer>
+        <div class="footer">
+            <img src="assets/img/logo.png" width="40px" height="35px" alt="">
+            <span>Workab</span>
+            <p>Copyright © 2021-2022 Bridgestone. All rights reserved.</p>
+        </div>
+    </footer>
     
     
     <script src="assets/bootstrap/jquery.min.js"></script>
     <script src="assets/bootstrap/popper.min.js"></script>
     <script src="assets/bootstrap/bootstrap.js"></script>
     <script src="assets/jquery/template.js"></script>
+    <script src="assets/js/script.js"></script>
     
     
 </body>

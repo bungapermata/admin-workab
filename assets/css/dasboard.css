@@ -1,52 +1,95 @@
-.dasboard-cards {
-   
-
+.row{
+    align-items: center;
 }
-
-.row.atas{
+.col-md-3{
     display: flex;
+    justify-content: space-evenly;
 }
-.card.atas{
-    width: 550px;
-    margin-bottom: 20px;
-    border: 0.2rem solid var(--main-color);
+.item{
+    width: 165px;
+    height: 210px;
+    position: relative;
+    margin-left: 20px;
+    margin-right: 20px;
+    border-radius: 28px;
+    box-shadow: 3px 3px 2px grey;
 }
-.card.bawah{
-    margin-top: 10px;
-    width: 350px;
-    border: 0.2rem solid var(--dark-color);
-}
-
-.card {
-    height: 180px;
-    border-radius: 10px;
-}
-
-.atas .card-header,
-.bawah .card-header{
-    color: var(--font-white);
-    font-size: 1.2rem;
+.item p {
+    font-family: Poppins;
+    font-style: normal;
     font-weight: 500;
+    font-size: 16px;
+    line-height: 27px;
+    color: #000000;
+    text-align: center;
+    padding-top: 20px;
+}
+
+.item .round {
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    border-radius: 50px;
+    top: 70px;
+    left: 30px;
+
+
+}
+
+.item .total {
+    position: absolute;
+    top: 28px;
+    left: 19px;
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 17px;
+    line-height: 33px;
     text-align: center;
 }
-.atas .card-header {
-    background: var(--main-color);
+
+.item.karyawan{
+    background: #FFE7EA;
+}
+.item.karyawan .round{
+    border: 8px solid #B46F78;
     
 }
-.bawah .card-header{
-    background: var(--dark-color);
+.item.karyawan .total{
+    color: #B46F78;
 }
-.atas .card-body,
-.bawah .card-body{
-    font-size: 2.5rem;
-    font-weight: 600;
-    text-align: center;
-    margin-top: 10px;
+.item.toko{
+    background: #F6F4FF;
 }
-.atas .card-body {
-    color: var(--main-color);
-    
+.item.toko .round{
+    border: 8px solid #5843BE;
 }
-.bawah .card-body{
-    color: var(--dark-color);
+.item.toko .total{
+    left: 23px;
+    color: #5843BE;
+}
+.item.attendance{
+    background: #ECF6FF;
+}
+.item.attendance .round{
+    border: 8px solid #1A55AF;
+}
+.item.attendance .total{
+    color: #1A55AF;
+}
+.item.visiting{
+    background: #FFFBF0;
+}
+.item.visiting .round{
+    border: 8px solid #427A0A;
+}
+.item.visiting .total{
+    color: #427A0A;
+}
+
+canvas{
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top: 40px;
+    margin-bottom: 60px;
 }
